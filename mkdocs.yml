@@ -1,0 +1,16 @@
+site_name: Sitio de Joaquín para IAW
+
+nav:
+  - Principal: index.md
+  - Acerca de: create_site.md
+
+theme: 
+  name: material
+  palette:
+    primary: indigo
+    accent: orange
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: logo/logo.jpg
+  lenguaje: es
