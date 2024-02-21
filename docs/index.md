@@ -1,4 +1,7 @@
-# Welcome to MkDocs
+
+![](gifs/KBb.gif)
+
+# Welcome to MkDocs for Joaquin
 
 - En este repositorio vamos a encontrar las publicaciones o proyectos del alumno Joaquín, así mismo, también se documentarán algunas prácticas.
 
@@ -12,3 +15,6 @@
 - Si queremos ver el enlace del repositio en *_GitHub_* accedemos [Aquí](https://github.com/kinoibanez/MkDocs)
 
     ![](images_index/cap1_index.png)
+
+
+    ![](gifs/gif1.gif)

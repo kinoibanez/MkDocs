@@ -17,7 +17,9 @@ Este repositorio es para realizar la página 6.2 de IAW donde trabajaremos con M
 
 3. Tenemos que crear un archivo llamado *_mokdocs.yml_* para indicar la configuración que queremos añadir.
 
-- Ejemplo del archivo: ![](images/cap2.png)
+- Ejemplo del archivo: 
+
+    ![](images/cap2.png)
 
 
 4. Si queremos generar un sitio web `servidor` desde nuestra consola, hacemos uso del siguiente comando `docker run --rm -it -p 8000:8000 -v "$PWD":/docs squidfunk/mkdocs-material`
