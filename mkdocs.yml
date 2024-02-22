@@ -5,11 +5,12 @@ nav:
   - Acerca de: create_site.md
   - Primera documentación: first.md
   - Segunda documentación: second.md
+  - HardWeAre: hardweare.md
 
 theme: 
   name: material
   palette:
-    primary: cyan
+    primary: black
     accent: orange
   font:
     text: Montserrat
