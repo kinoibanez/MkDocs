@@ -1,0 +1,555 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../first/">
+      
+      
+        <link rel="next" href="../hardweare/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Segunda documentación - Sitio de Joaquín para IAW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CMontserrat:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Montserrat"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terraform_aws" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Sitio de Joaquín para IAW" class="md-header__button md-logo" aria-label="Sitio de Joaquín para IAW" data-md-component="logo">
+      
+  <img src="../logo/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sitio de Joaquín para IAW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Segunda documentación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Sitio de Joaquín para IAW" class="md-nav__button md-logo" aria-label="Sitio de Joaquín para IAW" data-md-component="logo">
+      
+  <img src="../logo/logo.jpg" alt="logo">
+
+    </a>
+    Sitio de Joaquín para IAW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Principal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acerca de
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primera documentación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Segunda documentación
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardweare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HardWeAre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="terraform_aws">Terraform_AWS</h1>
+<p>Este repositorio es para realizar y explicar la estructura de Terraform para el despliegue de las instancias de AWS</p>
+<ul>
+<li>En está practica tendremos que realizar un script pero con una estructura de <a href="https://www.terraform.io"><em><em>Terraform</em></em></a> para implementar la estructura de las máquinas que utilizamos en la <a href="https://github.com/kinoibanez/Practica01-11IAW">Práctica 1.11 de IAW</a> del trimestre pasado.</li>
+</ul>
+<h1 id="que-es-terraform">¿ Qué es Terraform ?</h1>
+<ul>
+<li><a href="https://www.terraform.io"><em><em>Terraform</em></em></a> es un software de insfraestructura cómo codigo desarrollado por HashiCorp. 
+    Es una herramienta que nos permite la configuración de software diseñada para potenciar la automatización de múltiples procesos a través de conceptos como el de insfraesture as <em><em>code</em></em>.</li>
+</ul>
+<h1 id="estructura-de-este-script">Estructura de este script.</h1>
+<ul>
+<li>Este script deberá tener tres funciones básicas:</li>
+<li>Crear el <code>grupo de seguridad</code></li>
+<li>Crear la <code>instancia</code></li>
+<li>
+<p>Crear y asociar la <code>IP flotante</code></p>
+</li>
+<li>
+<p>Como estructura de Terraform nuestro directorio tendrá que tener la siguiente estructura.</p>
+<p>```
+.
+├── README.md
+└── Terraform
+    ├── main.tf
+    ├── terraform.tfstate
+    └── terraform.tfstate.backup</p>
+<p>```</p>
+</li>
+<li>
+<p>Añadiendo archivos también como el <code>.gitignore</code> que explicaremos al final.</p>
+</li>
+</ul>
+<h1 id="creacion-del-grupo-de-seguridad">Creación del grupo de seguridad.</h1>
+<ul>
+<li>
+<p>La sintáxis que vamos a seguir para crear el grupo de seguridad es la siguiente:</p>
+<p>```</p>
+<h1 id="creamos-un-grupo-de-seguridad-frontedn1">Creamos un grupo de seguridad frontedn1</h1>
+<p>resource "aws_security_group" "FrontEnd" {
+name        = "FrontEnd"
+description = "Grupo de seguridad para la instancia de Frontend"</p>
+<h1 id="reglas-de-entrada-para-permitir-el-trafico-ssh-http-y-https">Reglas de entrada para permitir el tráfico SSH, HTTP y HTTPS</h1>
+<p>ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+}</p>
+<p>ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+}</p>
+<pre><code># Reglas de salida para permitir todas las conexiones salientes
+</code></pre>
+<p>egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+}<br />
+}</p>
+<p>```
+- Los apartados principales son:</p>
+</li>
+<li>
+<p><code>from_port = Que nos indica el puerto de salida</code></p>
+</li>
+<li><code>to_port = Que nos indica el puerto de entrada</code></li>
+<li><code>protocol = Puede ser o TCP o UDP</code></li>
+<li>
+<p><code>cird_blocks = Hace referencia al bloque de redes que queremos que se conecte.</code></p>
+</li>
+<li>
+<p>En este caso podemos observar el <em><em>script</em></em> para el <em><em>frontend</em></em>. También podemos observar la diferencia entre <code>ingress</code> o <code>egress</code>. Esto hace referencia a las reglas de entrada que queremos generar, como a las reglas de salida.</p>
+</li>
+</ul>
+<h1 id="creacion-de-la-instancia">Creación de la instancia.</h1>
+<ul>
+<li>
+<p>Para crear la instancia tendremos que seguir el ejemplo siguiente:</p>
+<p>```
+    # Creamos una instancia EC2 solamente para el FrontEnd
+resource "aws_instance" "FrontEnd" {
+ami             = "ami-0c7217cdde317cfec"
+instance_type   = "t2.medium"
+key_name        = "vockey"
+security_groups = [aws_security_group.FrontEnd.name]</p>
+<p>tags = {
+    Name = "FrontEnd"
+}
+}
+```</p>
+</li>
+<li>
+<p><em><em>¿Cuales son los apartados más importantes</em></em>?</p>
+</li>
+<li>
+<p><code>ami = Es el código de identificación del SO que queremos utilizar</code></p>
+</li>
+<li><code>Instancie_key = Es el vockey, o claves de seguridad por las que accedemos por ssh a nuestras máquinas</code></li>
+<li><code>Instance_type = Es el nivel de flavours que queremos ponerle, es decir, el hardware virtual de la máquina.</code></li>
+<li><code>Security_Group = Hace referencia a la variable que anteriormente hemos creado con el nombre del grupo de seguridad.</code></li>
+</ul>
+<h1 id="creacion-y-asociacion-de-la-ips">Creación y asociación de la IPS.</h1>
+<ul>
+<li>
+<p>Para crear las ips tendremos que seguir la siguiente estructura:</p>
+<p>```
+    # Creamos una IP elástica y la asociamos a la instancia al frontend1
+resource "aws_eip" "ip_elastica1" {
+instance = aws_instance.FrontEnd.id
+}</p>
+<h1 id="mostramos-la-ip-publica-de-la-instancia-del-frontend1">Mostramos la IP pública de la instancia del frontend1</h1>
+<p>output "elastic_ip1" {
+value = aws_eip.ip_elastica1.public_ip
+}
+```</p>
+</li>
+<li>
+<p>El primer bloque del script nos permite crear una ip elástica a través de <code>aws</code> gracias al uso de <code>aws_eip</code> como <em><em>resource</em></em>. Al declararle un nombre de instancía en este caso <code>FrontEnd</code> automáticamente hará la acciónd de asociarse con la instancia que anteriormente creemos y se llame así.</p>
+<p>El segundo bloque nos permite que una vez hayamos lanzado el <code>terraform apply</code> y haga todo correctamente, podremos ver que ips se han asociado con que máquina.</p>
+</li>
+</ul>
+<h1 id="gitignore">.GitIgnore.</h1>
+<ul>
+<li>
+<p>Es un archivo que vamos a poner, pero que realmente, no deberías salir. La funcionalidad principal de este archivo es que no se suban archivos que no queremos que el resto de la gente vea, o archivos de tamaño mayor de <code>100MBs</code> que <em><em>github</em></em> no soporta. </p>
+<p>En este caso la estructura que hemos puesto es la siguiente:</p>
+<p>```
+    # Local .terraform directories
+*<em>/.terraform/</em></p>
+<p>.terraform.lock.hcl</p>
+<h1 id="tfstate-files">.tfstate files</h1>
+<p><em>.tfstate
+</em>.tfstate.*</p>
+<h1 id="crash-log-files">Crash log files</h1>
+<p>crash.log
+crash.*.log</p>
+<h1 id="exclude-all-tfvars-files-which-are-likely-to-contain-sensitive-data-such-as">Exclude all .tfvars files, which are likely to contain sensitive data, such as</h1>
+<h1 id="password-private-keys-and-other-secrets-these-should-not-be-part-of-version">password, private keys, and other secrets. These should not be part of version</h1>
+<h1 id="control-as-they-are-data-points-which-are-potentially-sensitive-and-subject">control as they are data points which are potentially sensitive and subject</h1>
+<h1 id="to-change-depending-on-the-environment">to change depending on the environment.</h1>
+<p><em>.tfvars
+</em>.tfvars.json</p>
+<h1 id="ignore-override-files-as-they-are-usually-used-to-override-resources-locally-and-so">Ignore override files as they are usually used to override resources locally and so</h1>
+<h1 id="are-not-checked-in">are not checked in</h1>
+<p>override.tf
+override.tf.json
+<em>_override.tf
+</em>_override.tf.json</p>
+<h1 id="include-override-files-you-do-wish-to-add-to-version-control-using-negated-pattern">Include override files you do wish to add to version control using negated pattern</h1>
+<h1 id="example_overridetf">!example_override.tf</h1>
+<h1 id="include-tfplan-files-to-ignore-the-plan-output-of-command-terraform-plan-outtfplan">Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan</h1>
+<h1 id="example-tfplan">example: <em>tfplan</em></h1>
+<h1 id="ignore-cli-configuration-files">Ignore CLI configuration files</h1>
+<p>.terraformrc
+terraform.rc</p>
+<p>```</p>
+</li>
+<li>
+<p>Donde podemos observar las funciones que realiza cada linea del archivo. Como puede ser por ejemplo ignorar archivos/lineas de configuración. O ocultar directorios completos que no queremos que se muestren en nuestro repo de git.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
